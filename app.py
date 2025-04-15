@@ -57,6 +57,23 @@ def update(id):
     conn.close()
     return redirect(url_for('index'))
 
+def create_table():
+    with sqlite3.connect('StudentDB.db') as conn:
+        conn.execute('''
+            CREATE TABLE IF NOT EXISTS students (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                name TEXT NOT NULL,
+                roll_number TEXT NOT NULL,
+                email TEXT NOT NULL,
+                mobile TEXT NOT NULL
+            )
+        ''')
+        conn.commit()
+
+# Call it right after app creation
+create_table()
+
+
 @app.route('/delete/<int:id>')
 def delete(id):
     conn = sqlite3.connect('StudentDB.db')
