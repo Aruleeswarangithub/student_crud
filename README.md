@@ -38,3 +38,21 @@ Click the **Delete** button to remove a student from the database.
 ```bash
 git clone https://github.com/Aruleeswarangithub/student-crud-app.git
 cd student-crud-app
+```
+🔹 Set Up the Environment
+Make sure Python is installed (preferably 3.7+). You can create a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+Install the required packages.
+
+```bash
+pip install -r requirements.txt
+```
+🔹 Run the Application
+```bash
+python app.py
+```
+Open your browser and go to:
+📍 http://127.0.0.1:5000/ to start using the app!
