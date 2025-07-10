@@ -56,3 +56,6 @@ python app.py
 ```
 Open your browser and go to:
 📍 http://127.0.0.1:5000/ to start using the app!
+
+🌐 **Live Demo:** [Click here to view the live app](https://student-crud-0bqu.onrender.com)
+
